@@ -3,10 +3,11 @@ package com.assignments;
 public class MainClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		System.out.println("Assignment Starts....");
 
+		
+		// ASSIGNMENT DATE: 05 August 2021.
 		/*
 		 * Number of elements : 10 Sample array elements : 10 20 30 50 20 60 30 10 40 50
 		 * Sample array elements : 60 25 10 56 65 95 40 82 65 74
@@ -15,8 +16,6 @@ public class MainClass {
 		 * 20 30 50 20 60 30 10 40
 		 * 
 		 */
-		
-		// ASSIGNMENT DATE: 05 August 2021.
 		// Assignment-1: Find duplicate elements in array.
 		System.out.println("---Duplicate elements of array---");
 		DuplicateElementsInArray duplicateElementsInArray = new DuplicateElementsInArray();
