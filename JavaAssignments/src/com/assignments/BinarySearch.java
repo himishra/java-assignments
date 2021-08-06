@@ -27,15 +27,15 @@ public class BinarySearch {
 	}
 
 	public void binarySearch() {
-		System.out.println("Enter a number to find in array: ");
+		System.out.print("Enter a number to find in array: ");
 		int searchElement = scanner.nextInt();
-		int low = 0, high = numberOfElement, mid = 0;
-		int flag = 0;
+		
+		int low = 0, high = numberOfElement - 1, mid = 0;
+		
 		while (low <= high) {
-			mid = low + high / 2;
+			mid = low + ((high - low) / 2);
 			if (array[mid] == searchElement) {
 				System.out.println(searchElement + " number found at " + (mid + 1));
-				flag=1;
 				break;
 			} else if (array[mid] < searchElement) {
 				low = mid + 1;
@@ -43,8 +43,8 @@ public class BinarySearch {
 				high = mid - 1;
 			}
 		}
-		if(flag==0) {
-			System.out.println(searchElement+" not found in the array.");
+		if (low > high) {
+			System.out.println(searchElement + " not found in the array.");
 		}
 	}
 }
