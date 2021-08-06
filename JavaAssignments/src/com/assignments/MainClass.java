@@ -15,7 +15,8 @@ public class MainClass {
 		 * 20 30 50 20 60 30 10 40
 		 * 
 		 */
-
+		
+		// ASSIGNMENT DATE: 05 August 2021.
 		// Assignment-1: Find duplicate elements in array.
 		System.out.println("---Duplicate elements of array---");
 		DuplicateElementsInArray duplicateElementsInArray = new DuplicateElementsInArray();
