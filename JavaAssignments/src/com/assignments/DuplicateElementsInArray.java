@@ -25,8 +25,8 @@ public class DuplicateElementsInArray {
 	}
 
 	public void duplicateElements() {
-		for (int i = 0; i < numberOfElement; i++) {
-			for (int j = i + 1; j < numberOfElement; j++) {
+		for (int i = 0; i < numberOfElement; i++) {			// n
+			for (int j = i + 1; j < numberOfElement; j++) {	// n
 				if (array[i] == array[j]) {
 					System.out.println(array[j]);
 				}

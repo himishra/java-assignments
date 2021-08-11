@@ -29,11 +29,14 @@ public class BinarySearch {
 	public void binarySearch() {
 		System.out.print("Enter a number to find in array: ");
 		int searchElement = scanner.nextInt();
-		
+
 		int low = 0, high = numberOfElement - 1, mid = 0;
-		
+
 		while (low <= high) {
+//			low = Integer.MIN_VALUE;
+//			high = Integer.MAX_VALUE;
 			mid = low + ((high - low) / 2);
+			mid = (low + high) / 2;
 			if (array[mid] == searchElement) {
 				System.out.println(searchElement + " number found at " + (mid + 1));
 				break;

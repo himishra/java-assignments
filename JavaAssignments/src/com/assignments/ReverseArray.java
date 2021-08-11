@@ -27,12 +27,11 @@ public class ReverseArray {
 	}
 
 	public void reverseArray() {
-		int temp = 0;
-		for (int i = 0; i < numberOfElement / 2; i++) {
-			temp = array[i];
-			array[i] = array[numberOfElement - i - 1];
-			array[numberOfElement - i - 1] = temp;
-
+		int temp = 0;									
+		for (int i = 0; i < numberOfElement / 2; i++) {	
+			temp = array[i];							//	temp = 1
+			array[i] = array[numberOfElement - i - 1];	//	arr[0] = arr[4] 
+			array[numberOfElement - i - 1] = temp;		//	arr[4] = temp
 		}
 	}
 }
